@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tables</title>
+</head>
+
+<body>
+  <h3>How to Create a Table</h3>
+  <ol>
+    <li>Insert element "table"</li>
+    <li>Insert elements "thead" for header, "tbody" for body, and "tfoot" for footer</li>
+    <li>Insert "th" for each table header row. The text will automatically be bolded and centered</li>
+    <li>Insert "tr" for each table row</li>
+    <li>There are no coloumns, columns are created by inserting "td", table data, in each row from left to right</li>
+  </ol>
+  <p>*Although it is possible to use "th" element to insert headers in the table body, it is not recommended as
+    it will make it difficult to isolate the header and style it, etc., later.</p>
+  <p>*The table footer is used to provide summary information and will always appear at bootom of
+    table regardless of where it appears in the HTML unless overridden with CSS.</p>
+  <p>*You can also create tables within tables, but it is better to use CSS to effect table layout</p>
+  <h4><strong><u>Attributes for Table element</u></strong></h4>
+  <table border="1" cellpadding="2" cellspacing="5">
+    <thead>
+      <th>Attribute</th>
+      <th>Description</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>border="n"</td>
+        <td>Used to create borders for table.</td>
+      </tr>
+      <tr>
+        <td>cellspacing="n"</td>
+        <td>Used to insert space between cells</td>
+      </tr>
+      <tr>
+        <td>cellpadding="n"</td>
+        <td>Used to insert spacing between content and border of cell</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td><i>This is a</i></td>
+        <td><i>table footer</i></td>
+      </tr>
+    </tfoot>
+  </table>
+  <p>Most of these attributes are deprecated; meaning it is no longer recommended for use
+    as you should use CSS for styling instead of HTML</p>
+</body>
+
+</html>
